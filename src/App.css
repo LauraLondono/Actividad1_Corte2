@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-content {
+  /* background-color: #bb5b5b; */
+  background-image: radial-gradient(circle, rgb(0, 0, 0), rgb(0, 255, 242));
+
+  background-color: line;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-content .title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+/* 
+.App-link {
+  color: #61dafb;
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+form input {
+  height: 26px;
+  border-radius: 5px;
+  display: flex;
+  vertical-align: auto;
+  border: none;
+}
+
+form button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  background-color: rgb(219, 0, 91);
+  height: 30px;
+  width: 80px;
+}
+
+.list {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  width:50%;
+}
+
+.list .item,
+.list .edit {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.list input {
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  vertical-align: auto;
+  border: none;
+
+}
+
+/* .btn-delete {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: rgb(255, 0, 0);
+  height: 30px;
+  width: 30px;
+} */
+
+.btn-edit,
+.btn-delete {
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  border-radius: 6px;
+  background-color: rgb(219, 0, 91);
+  border: none;
+  margin:5px;
+}
+
+.btn-edit .edit path, 
+.btn-edit .save path,
+.btn-delete .delete path {
+  fill: rgb(255, 255, 255);
+}
+
+.items {
+  margin-top: 20px;
+}
+
+.done {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-color: #fafafa;
+  padding: 5px;
+  display: flex;
+  align-items:center;
+  height: 25px;
+  width:23px;
+  margin-right: 5px;
+}
+
+.done:checked {
+	color: rgb(219, 0, 91);
+}
+
+.done:checked:after {
+	content: '\2714';
+	font-size: 18px;
+  font-weight: bold;
+
+}
